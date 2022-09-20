@@ -4,7 +4,7 @@ int soma_valores_vetor(){
     int vetor[10];
     int i, x, y, result;
     
-    for(i = 0; i < 10; i++){
+    for(i = 0; i < 10; i++){    //pega os valores da lista
         printf("Valor do %d valor da lista: ", i);
         scanf("%d", &vetor[i]);
     }
