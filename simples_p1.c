@@ -1,9 +1,13 @@
 #include <stdio.h>
 
 int soma_valores_vetor(){
-    int vetor[10] = {13, 5, 7, 6, 4, 8, 16, 31, 9, 21} ;
-    int x, y, result;
+    int vetor[10];
+    int i, x, y, result;
     
+    for(i = 0; i < 10; i++){
+        printf("Valor do %d valor da lista: ", i);
+        scanf("%d", &vetor[i]);
+    }
     do{printf("Valor de X: ");
     scanf("%d", &x);
     } while(x<0 || x>9);    //verifica se a posição x está dentro do vetor
