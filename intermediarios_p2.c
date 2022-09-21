@@ -15,8 +15,8 @@ int verifica_num_em_array(int *array, int num, int size){
 int * sem_repeticoes(int * lista, int size){
     int i = 0, j = 0, num_nao_repetidos = size, num_usados;
     
-    for(i; i < size; i++){    //loop para ver quantos numeros nao repetidos tem
-        for(j; j < size; j++){
+    for(i = 0; i < size; i++){    //loop para ver quantos numeros nao repetidos tem
+        for(j = 0; j < size; j++){
             if(j != i){
                 if(lista[i] != lista[j]){
                     num_nao_repetidos--;
